@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Octavio Belottini</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/75bdca18e8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logofb.png" class="logo">
+                <ul>
+                    <li><a href="#about"><i class="fa-solid fa-circle-user"></i>Acerca de Mí</a></li>
+                    <li><a href="#portafolio"><i class="fa-solid fa-briefcase"></i>Portafolio</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-comment"></i>Contactos</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Programador Junior</p>
+                <h1>Hola, soy <span>Felipe</span><br>Belottini</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About Section --> 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/20221220_154516.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Acerca de Mí</h1>
+                    <p>Licenciado en Ciencias de la Computación, con formación en análisis y desarollo de software. 
+                        Actualmente estoy orientando mi desarollo profesional hacia fortalecer el conocimiento de tecnologias y herramientas claves para el desarollo de software.
+                        Me interesa formar parte de equipos donde pueda aportar una perspectiva orientada a lo fundamental del diseño, marcada por un deseo de resolver problemas.  
+                        <br>En las próximas semanas estaré desarollando proyectos enfocados en el desarollo full-stack de aplicaciones, asi como la arquitectura de computadoras. 
+                        <br>Analítico, detallista y capaz de trabajar de forma independiente o en equipo. Con ganas de empezar.
+                    </p>
+                    <div class="tab-titles">
+                        <button  class="about-links tab-links active" onclick="openAbout(event, 'Habilidades')">Habilidades</button>
+                        <button class="about-links tab-links" onclick="openAbout(event, 'Educacion')">Educación</button>
+                        <button class="about-links tab-links" onclick="openAbout(event, 'Experiencia')">Experiencia</button>
+                    </div>
+                    <div id="Habilidades" class="about-contents tab-contents active">
+                        <ul>
+                            <li><span>Lenguajes de Programación</span><br>Java, HTML, CSS, JavaScript, C++, SQL, Python</li>
+                            <li><span>Conceptos de Programación</span><br>Análisis de algoritmos, diseño y adaptación de algoritmos, diseño de sistemas de bases de datos, principios de redes neuronales, principios de estructuras de datos, conceptos de programación orientada a objetos, desarrollo y programación web.</li>
+                            <li><span>Diseño Web</span><br>Responsive Design, SEO</li>
+                            <li><span>Fluencia en Inglés</span><br>Nivel C2 - Cambridge English Scale</li>
+                        </ul>
+                    </div>
+                    <div id="Educacion" class="about-contents tab-contents">
+                        <ul>
+                            <li><span>Licenciatura en Ciencias de la Computación (2018 - 2023)</span><br>Brandon University, Brandon, Manitoba, Canadá
+                                <br>3.68 GPA
+                                <br>International Undergraduate Student Scholarship (2020, 2021, 2022)
+                            </li>
+                            <li><span>Egresado en Colegio Secundario (2012 - 2017)</span><br>Colegio Bilingüe San Antonio, Concordia, Entre Ríos, Argentina<br>Promedio General de 8.24</li>
+                        </ul>
+                    </div>
+                    <div id="Experiencia" class="about-contents tab-contents">
+                        <ul>
+                            <li><span>Ayudante de Cátedra (2023-2024)</span><br>Brandon University, Brandon, Manitoba, Canadá</li>
+                            <ul id="tab-experiencia"><li>Colaboración con la entrega y evaluación de tareas.</li>
+                                <li>Apoyo a estudiantes con dificultades.
+                                <li>Asistencia en la preparación de clases.</li></ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portafolio Section --> 
+    <div id="portafolio">
+        <div class="container">
+            <h1 class="sub-title">Portafolio</h1>
+            <div class="tab-titles">
+                <button  class="portafolio-links tab-links active" onclick="openPortafolio(event, 'DisenoWeb')">Diseño Web</button>
+                <button class="portafolio-links tab-links" onclick="openPortafolio(event, 'Proyectos')">Proyectos</button>
+            </div>
+                <div id="DisenoWeb" class="portafolio-contents tab-contents active">
+                    <ul>
+                        <li><span>Diseño y Desarrollo de Sitio Web</span><br><a href="https://juanfranciscoaisa.com/" style="color: orange;">Psicólogo Integrativo - Juan Francisco Aisa</a><br>
+                            <img class="portafolio-img" src="images/juanfra.jpg">
+                            <ul><li>Tecnologias usadas: HTML | CSS | Javascript</li>
+                                <li>Diseño de interfaz moderna y alineada con la identidad profesional del cliente.</li>
+                                <li>Comunicación directa con el cliente para definir necesidades, estilo visual y objetivos del sitio.</li>
+                                <li>Iteración sobre propuestas de diseño priorizando claridad, estética y experiencia de usuario.</li>
+                                <li>Adaptación del contenido para transmitir confianza y profesionalismo.</li>
+                                <li>Implementación final optimizada y lista para despliegue.</li>
+                            </ul></li>
+                        <li><span>Optimización SEO y Mantenimiento Web</span><br><a href="https://autoresdeconcordia.com.ar/" style="color: orange;">Autores de Concordia</a><br>
+                            <img class="portafolio-img" src="images/autores.jpg">
+                            <ul><li>Tecnologias usadas: PHP | HTML</li>
+                                <li>Auditoría y mejora de posicionamiento en buscadores (SEO).</li>
+                                <li>Optimización de meta etiquetas y rendimiento general del sitio.</li>
+                                <li>Corrección de estructura de URLs y redirecciones.</li>
+                                <li>Soporte en implementación de herramientas de monetización (Adsense).</li>
+                            </ul></li>
+                    </ul>
+                </div>
+                <div id="Proyectos" class="portafolio-contents tab-contents">
+                    <ul>
+                        <li><span>Aplicación Web MERN CRUD</span><br><a href="https://github.com/Ph475/MERN_CRUD" style="color: orange;">Github</a><br>
+                            <img class="portafolio-img" src="images/crud.jpg">
+                            <ul><li>Tecnologias utilizadas: MongoDB | ExpressJs | React | NodeJs </li>
+                                <li>Desarrollo de aplicación full-stack con operaciones CRUD completas.</li>
+                                <li>Implementación de API REST para gestión de datos.</li>
+                                <li>Interfaz dinámica construida con React.</li>
+                                <li>Gestión de base de datos NoSQL (MongoDB).</li>
+                            </ul></li>
+                        <li><span>Emulador Chip8</span><br><a href="https://github.com/Ph475/Chip8" style="color: orange;">Github</a><br>
+                            <img class="portafolio-img" src="images\Screenshot 2026-03-23 023818.jpg">
+                            <ul><li>Tecnologias utilizadas: Visual Studio | C++ | SDL </li>
+                                <li>Implementación de emulador funcional del sistema CHIP-8.</li>
+                                <li>Gestión de gráficos y entrada de usuario mediante SDL.</li>
+                                <li>Desarrollo de lógica de bajo nivel y manejo de memoria.</li>
+                                <li>Ejecución de ROMs clásicas.</li>
+                            </ul></li>                    
+                    </ul>
+                </div>
+        </div>
+    </div>
+
+    <!-- Contact Section --> 
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contactos</h1>
+            <div class="contact-links">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/felipe-b-208631170/"><span><i class="fa-brands fa-linkedin"></i></span>LinkedIn</a></li>
+                    <li><a href="https://github.com/Ph475"><span><i class="fa-brands fa-github"></i></span>Github</a></li>
+                    <li><a href="mailto:felipe.belottini@gmail.com"><span><i class="fa-solid fa-envelope"></i></span>felipe.belottini@gmail.com</a></li>
+                    <li><span><i class="fa-solid fa-phone"></i></span>+345 434 1977</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="main.js" defer></script>
+</body>
+</html>
